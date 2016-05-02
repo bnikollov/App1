@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="33">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController" modalTransitionStyle="crossDissolve">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="14" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" showsHorizontalScrollIndicator="NO" pagingEnabled="YES" directionalLockEnabled="YES" keyboardDismissMode="interactive">
+                                <rect key="frame" x="0.0" y="74" width="198" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="15" rowHeight="44" reuseIdentifier="cell3">
+                                        <rect key="frame" x="0.0" y="22" width="198" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="16" tableViewCell="15">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="17" rowHeight="44" reuseIdentifier="cell2">
+                                        <rect key="frame" x="0.0" y="66" width="198" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="18" tableViewCell="17">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="19" rowHeight="44" reuseIdentifier="cell1">
+                                        <rect key="frame" x="0.0" y="110" width="198" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="20" tableViewCell="19">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="113" width="280" height="278"/>
+                                </variation>
+                                <color key="separatorColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="399" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Woke Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.19215686274509805" green="0.30588235294117649" blue="0.52156862745098043" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="399" width="117" height="72"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="22" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="399" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <state key="normal" title="Fell Asleep">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.19215686274509805" green="0.30588235294117649" blue="0.52156862745098043" alpha="1"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="399" width="119" height="72"/>
+                                </variation>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" id="11" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="-12" y="324" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="12" title="BabySleep 101">
+                                        <barButtonItem id="23" translatesAutoresizingMaskIntoConstraints="NO" key="rightBarButtonItem" width="1">
+                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <accessibilityConfiguration key="accessibilityConfiguration">
+                                                <traits key="traits" image="YES" adjustable="YES"/>
+                                                <isElement key="isElement" value="YES"/>
+                                            </accessibilityConfiguration>
+                                            <connections>
+                                                <action selector="UIBarButtonItem23_Activated:" destination="BYZ-38-t0r" id="24"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                </variation>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="21"/>
+                                </textAttributes>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="28" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="74" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Pictures/avatar_2.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="74" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="29" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="254" y="74" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Pictures/gear-outline.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="254" y="74" width="46" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="11"/>
+                                <exclude reference="14"/>
+                                <exclude reference="21"/>
+                                <exclude reference="22"/>
+                                <exclude reference="28"/>
+                                <exclude reference="29"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="11"/>
+                                <include reference="14"/>
+                                <include reference="21"/>
+                                <include reference="22"/>
+                                <include reference="28"/>
+                                <include reference="29"/>
+                            </mask>
+                        </variation>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-441"/>
+        </scene>
+        <scene sceneID="32">
+            <objects>
+                <viewController id="33" sceneMemberID="viewController" customClass="ViewController" title="LogInScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="30"/>
+                        <viewControllerLayoutGuide type="bottom" id="31"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="34">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="44" translatesAutoresizingMaskIntoConstraints="NO" image="Pictures/TitlesAndLogos/WelcomeTitle.png" fixedFrame="YES">
+                                <rect key="frame" x="80" y="176" width="160" height="240"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="60" y="20" width="200" height="52"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="89" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="119" y="80" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="200" width="170" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="90" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="119" y="80" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="238" width="170" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="91" translatesAutoresizingMaskIntoConstraints="NO" text="Log in" fixedFrame="YES">
+                                <rect key="frame" x="104" y="125" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="149" width="50" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="92" translatesAutoresizingMaskIntoConstraints="NO" text="Username:" fixedFrame="YES">
+                                <rect key="frame" x="71" y="200" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="200" width="87" height="30"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="93" translatesAutoresizingMaskIntoConstraints="NO" text="Password:" fixedFrame="YES">
+                                <rect key="frame" x="71" y="200" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="242" width="87" height="26"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="94" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="130" y="276" width="46" height="30"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="130" y="276" width="46" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="44"/>
+                                <exclude reference="89"/>
+                                <exclude reference="90"/>
+                                <exclude reference="91"/>
+                                <exclude reference="92"/>
+                                <exclude reference="93"/>
+                                <exclude reference="94"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="44"/>
+                                <include reference="89"/>
+                                <include reference="90"/>
+                                <include reference="91"/>
+                                <include reference="92"/>
+                                <include reference="93"/>
+                                <include reference="94"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="UsernameText" destination="89" id="name-outlet-89"/>
+                        <outlet property="PasswordText" destination="90" id="name-outlet-90"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-428" y="-443"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Pictures/25618.gif" width="183" height="300"/>
+        <image name="Pictures/172065182452.jpg" width="758" height="758"/>
+        <image name="Pictures/abl3mc.gif" width="140" height="226"/>
+        <image name="Pictures/animated-baby-looks-then-cries.gif" width="198" height="198"/>
+        <image name="Pictures/avatar_2.jpg" width="512" height="512"/>
+        <image name="Pictures/Babies-Crawling-89925.gif" width="108" height="80"/>
+        <image name="Pictures/Baby Boy In Crib Clip Art Cartoon.jpg" width="800" height="793"/>
+        <image name="Pictures/baby_3_crawl.gif" width="101" height="143"/>
+        <image name="Pictures/baby_321.jpg" width="620" height="620"/>
+        <image name="Pictures/baby-0040.gif" width="100" height="144"/>
+        <image name="Pictures/baby-animation.gif" width="550" height="485"/>
+        <image name="Pictures/Baby-Boy-And-Baby-Girl-Blink-Eyes-Image.gif" width="472" height="593"/>
+        <image name="Pictures/BabyCrying.gif" width="180" height="121"/>
+        <image name="Pictures/bebe-gateando.png" width="600" height="422"/>
+        <image name="Pictures/cartoon-baby_boy-clipart_13.png" width="400" height="400"/>
+        <image name="Pictures/cartoon-baby-pics-download.jpg" width="1350" height="1200"/>
+        <image name="Pictures/configuration.png" width="256" height="256"/>
+        <image name="Pictures/free-baby-clipart-eaiepBbc4.gif" width="616" height="612"/>
+        <image name="Pictures/gear-outline.png" width="512" height="512"/>
+        <image name="Pictures/giphy.gif" width="500" height="281"/>
+        <image name="Pictures/graphics-babies-205783.gif" width="120" height="105"/>
+        <image name="Pictures/more.png" width="442" height="442"/>
+        <image name="Pictures/Profile_Settings-512.png" width="512" height="512"/>
+        <image name="Pictures/settings-9-256.png" width="256" height="256"/>
+        <image name="Pictures/settingsbutton.png" width="512" height="512"/>
+        <image name="Pictures/settings-icon-61501.png" width="512" height="512"/>
+        <image name="Pictures/Sleeping-baby-animation.gif" width="100" height="80"/>
+        <image name="Pictures/sleeping-baby-cartoon.jpg" width="2340" height="2279"/>
+        <image name="Pictures/sleeping-baby-cartoon22.png" width="2384" height="2352"/>
+        <image name="Pictures/wokeup-border.png" width="1016" height="862"/>
+        <image name="Pictures/TitlesAndLogos/WelcomeTitle.png" width="640" height="160"/>
+    </resources>
+</document>

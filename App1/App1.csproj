@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{B092AF4A-9C4E-4E97-8570-8AD446BBA9E0}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>App1</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>App1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\SQLite.cs" />
+    <Compile Include="Data\Users.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ViewControlerLogIn.cs" />
+    <Compile Include="ViewControlerLogIn.designer.cs">
+      <DependentUpon>ViewControlerLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController.cs" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\Pictures\25618.gif" />
+    <BundleResource Include="Resources\Pictures\172065182452.jpg" />
+    <BundleResource Include="Resources\Pictures\abl3mc.gif" />
+    <BundleResource Include="Resources\Pictures\animated-baby-looks-then-cries.gif" />
+    <BundleResource Include="Resources\Pictures\avatar_2.jpg" />
+    <BundleResource Include="Resources\Pictures\Babies-Crawling-89925.gif" />
+    <BundleResource Include="Resources\Pictures\Baby Boy In Crib Clip Art Cartoon.jpg" />
+    <BundleResource Include="Resources\Pictures\baby_3_crawl.gif" />
+    <BundleResource Include="Resources\Pictures\baby_321.jpg" />
+    <BundleResource Include="Resources\Pictures\baby-0040.gif" />
+    <BundleResource Include="Resources\Pictures\baby-animation.gif" />
+    <BundleResource Include="Resources\Pictures\Baby-Boy-And-Baby-Girl-Blink-Eyes-Image.gif" />
+    <BundleResource Include="Resources\Pictures\BabyCrying.gif" />
+    <BundleResource Include="Resources\Pictures\bebe-gateando.png" />
+    <BundleResource Include="Resources\Pictures\cartoon-baby_boy-clipart_13.png" />
+    <BundleResource Include="Resources\Pictures\cartoon-baby-pics-download.jpg" />
+    <BundleResource Include="Resources\Pictures\configuration.png" />
+    <BundleResource Include="Resources\Pictures\free-baby-clipart-eaiepBbc4.gif" />
+    <BundleResource Include="Resources\Pictures\gear-outline.png" />
+    <BundleResource Include="Resources\Pictures\giphy.gif" />
+    <BundleResource Include="Resources\Pictures\graphics-babies-205783.gif" />
+    <BundleResource Include="Resources\Pictures\more.png" />
+    <BundleResource Include="Resources\Pictures\Profile_Settings-512.png" />
+    <BundleResource Include="Resources\Pictures\settings-9-256.png" />
+    <BundleResource Include="Resources\Pictures\settingsbutton.png" />
+    <BundleResource Include="Resources\Pictures\settings-icon-61501.png" />
+    <BundleResource Include="Resources\Pictures\Sleeping-baby-animation.gif" />
+    <BundleResource Include="Resources\Pictures\sleeping-baby-cartoon.jpg" />
+    <BundleResource Include="Resources\Pictures\url.htm" />
+    <BundleResource Include="Resources\Pictures\sleeping-baby-cartoon22.png" />
+    <BundleResource Include="Resources\Pictures\wokeup-border.png" />
+    <BundleResource Include="Resources\Pictures\TitlesAndLogos\WelcomeTitle.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
